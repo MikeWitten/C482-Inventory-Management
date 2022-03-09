@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModPart">
+
+    <Label fx:id="label1" layoutX="27.0" layoutY="39.0" text="Modify Part">
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font>
+    </Label>
+    <Group layoutX="146.0" layoutY="39.0">
+        <RadioButton fx:id="inHouseButton" mnemonicParsing="false" onAction="#toInHouse" text="In-House" />
+        <RadioButton fx:id="outsourcedButton" layoutX="154.0" mnemonicParsing="false" onAction="#toOutsourced" text="Outsourced" />
+    </Group>
+    <TextField fx:id="IDTxt" editable="false" layoutX="135.0" layoutY="113.0" />
+    <TextField fx:id="nameTxt" layoutX="135.0" layoutY="150.0" />
+    <TextField fx:id="stockTxt" layoutX="135.0" layoutY="186.0" />
+    <TextField fx:id="priceTxt" layoutX="135.0" layoutY="223.0" />
+    <TextField fx:id="maxTxt" layoutX="135.0" layoutY="262.0" />
+    <TextField fx:id="flexTxt" layoutX="135.0" layoutY="300.0" />
+    <TextField fx:id="minTxt" layoutX="374.0" layoutY="262.0" />
+    <Label layoutX="35.0" layoutY="117.0" text="ID" />
+    <Label layoutX="35.0" layoutY="154.0" text="Name" />
+    <Label layoutX="35.0" layoutY="190.0" text="Inv" />
+    <Label layoutX="35.0" layoutY="227.0" text="Price/Cost" />
+    <Label layoutX="35.0" layoutY="266.0" text="Max" />
+    <Label fx:id="flexLabel" layoutX="35.0" layoutY="304.0" />
+    <Label layoutX="314.0" layoutY="266.0" text="Min" />
+    <ButtonBar layoutX="274.0" layoutY="360.0" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+            <Button mnemonicParsing="false" onAction="#updatePart" text="Save" />
+            <Button layoutX="135.0" layoutY="17.0" mnemonicParsing="false" onAction="#backToMain" text="Cancel" />
+        </buttons>
+    </ButtonBar>
+</AnchorPane>
